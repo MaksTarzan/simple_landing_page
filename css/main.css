@@ -108,3 +108,66 @@ header {
     min-height: 700px;
     display: block;
 }
+
+#gallery{
+    background-color: #f7f7f7;
+    padding: 100px 0 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.portfolio p {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    color: #777777;
+    font-size: 16px;
+}
+
+.masonry {
+    transition: all .5s ease-in-out;
+    column-gap: 30px;
+    column-fill: initial;
+}
+
+.masonry .item {
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.masonry .item img {
+    transition: all .5s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.masonry .item:hover img {
+    opacity: .75;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .masonry {
+        column-count: 3;
+    }
+}
