@@ -52,6 +52,35 @@ h5 {
     color: #000000;
 }
 
+textarea {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textarea;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 2px;
+}
+
 header {
     transition: all 0.4s ease;
     position: fixed;
@@ -77,6 +106,7 @@ header {
     clear: both;
 }
 
+.column,
 .columns {
     width: 100%;
     float: left;
@@ -112,12 +142,20 @@ header {
 #gallery{
     background-color: #f7f7f7;
     padding: 100px 0 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+}
+
+#contact {
+    background: url(/img/contact.png) no-repeat center center;
+    background-size: cover;
+    display: block;
+    min-height: 670px;
+    position: relative;
 }
 
 .portfolio {
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .portfolio h3 {
@@ -160,6 +198,75 @@ img{
     vertical-align: middle;
 }
 
+.contact{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 110px;
+}
+
+.contact p {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    color: #777777;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0 70px;
+}
+
+.contactus input {
+    border: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 95%;
+    min-height: 50px;
+    border-radius: 4px;
+    padding: 7px 20px;
+}
+
+.message textarea {
+    border: hidden;
+    font-size: 15px;
+    width: 95%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 15px;
+    min-height: 182px;
+    border-radius: 4px;
+    padding: 20px 20px;
+}
+
+.button a {
+    text-align: center;
+    background-color: #fed136;
+    color: #FFF;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 30px auto;
+    display: block;
+    width: 25%;
+    border-radius: 3px;
+    padding: 20px 0 20px;
+    transition: all 0.3s;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button a:hover {
+    background-color: #CC6;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .masonry {
         column-count: 2;
@@ -169,5 +276,32 @@ img{
 @media only screen and (min-width: 1024px) {
     .masonry {
         column-count: 3;
+    }
+}
+
+@media (min-width: 400px) {
+    .container {
+        width: 85%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 550px){
+    .container {
+        width: 80%;
+    }
+
+    .column,
+    .columns {
+        margin-left: 4%;
+    }
+
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+
+    .size.columns {
+        width: 48%;
     }
 }
