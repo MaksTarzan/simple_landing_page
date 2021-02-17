@@ -1,0 +1,255 @@
+@media only screen and (min-width: 959px) {
+	.masonry {
+		column-count: 3;
+	}
+}
+
+@media (min-width: 400px) {
+	.container {
+		width: 85%;
+		padding: 0;
+	}
+}
+
+@media (min-width: 550px) {
+	h1 {
+		font-size: 5.0rem;
+	}
+
+	h2 {
+		font-size: 4.2rem;
+	}
+
+	h3 {
+		font-size: 3.6rem;
+	}
+
+	h4 {
+		font-size: 3.0rem;
+	}
+
+	h5 {
+		font-size: 2.4rem;
+	}
+
+	h6 {
+		font-size: 1.5rem;
+	}
+
+	.container {
+		width: 80%;
+	}
+
+	.column,
+	.columns {
+		margin-left: 4%;
+	}
+
+	.column:first-child,
+	.columns:first-child {
+		margin-left: 0;
+	}
+
+	.cont-size.columns {
+		width: 48%;
+	}
+
+	.nav-size.columns {
+		width: 39.3333333333%;
+	}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.masonry {
+		column-count: 3;
+	}
+	.contact h2 {
+		margin-top: 60px;
+	}
+
+	.contactus input {
+		font-size: 14px;
+		width: 90%;
+	}
+
+	.button a {
+		font-size: 14px;
+		width: 40%;
+	}
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 670px) and (max-width: 767px) {
+	.masonry {
+		column-count: 2;
+	}
+	#home {
+		min-height: 600px;
+	}
+
+	.studio h2 {
+		font-size: 60px;
+	}
+
+	.studio h3 {
+		font-size: 35px;
+	}
+
+	.portfolio h3 {
+		font-size: 35px;
+	}
+	#contact{
+		min-height: 600px;
+	}
+	.contact h2 {
+		margin-top: 60px;
+	}
+
+	.contactus input {
+		font-size: 13px;
+		margin-top: 15px;
+		width: 86%;
+		min-height: 40px;
+	}
+
+	.message textarea {
+		font-size: 13px;
+		min-height: 153px;
+	}
+
+	.button a {
+		font-size: 14px;
+		width: 30%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 670px) {
+	.masonry {
+		column-count: 2;
+	}
+	#home {
+		min-height: 500px;
+	}
+
+	.menu a{
+		font-size: 16px;
+		padding: 3px;
+	}
+
+	.studio h3 {
+		font-size: 30px;
+	}
+
+	.studio h2 {
+		font-size: 40px;
+	}
+
+	.portfolio h3 {
+		font-size: 35px;
+	}
+
+	#contact {
+		min-height: 500px;
+	}
+
+	.contactus input {
+		font-size: 12px;
+		width: 85%;
+		min-height: 35px;
+	}
+
+	.message textarea {
+		font-size: 12px;
+		min-height: 137px;
+		width: 85%;
+	}
+
+	.button a {
+		font-size: 14px;
+		width: 33%;
+		padding: 14px 0 14px;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 550px) {
+	#contact {
+		min-height: 400px;
+	}
+
+	.masonry {
+		column-count: 2;
+	}
+	
+	#home {
+		min-height: 500px;
+	}
+	.menu a {
+		font-size: 16px;
+		padding: 3px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	#contact {
+		min-height: 100px;
+	}
+
+	.masonry {
+		column-count: 2;
+	}
+
+	#home {
+		min-height: 400px;
+	}
+
+	.menu a {
+		font-size: 16px;
+		padding: 3px;
+	}
+
+	.studio h3 {
+		font-size: 25px;
+	}
+
+	.studio h2 {
+		font-size: 40px;
+	}
+
+	.portfolio h3 {
+		font-size: 35px;
+	}
+
+	.contactus input {
+		font-size: 15px;
+	}
+
+	.message textarea {
+		font-size: 15px;
+	}
+
+	.button a {
+		font-size: 10px;
+		padding: 10px 0 10px;
+		width: 40%;
+	}
+
+	.message textarea {
+		width: 90%;
+		min-height: 180px;
+	}
+
+	.contactus input {
+		width: 90%;
+		min-height: 30px;
+	}
+
+	.contact h2 {
+		font-size: 35px;
+		margin-top: 50px;
+	}
+}
